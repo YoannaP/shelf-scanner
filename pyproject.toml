@@ -1,0 +1,25 @@
+[project]
+name = "shelf-scanner"
+version = "0.1.0"
+description = "Photograph a bookshelf, then classify each book as Read / Want to Read / Did not finish."
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic",
+    "fastapi>=0.115",
+    "httpx",
+    "pillow",
+    "pillow-heif",
+    "python-dotenv",
+    "python-multipart",
+    "uvicorn",
+]
+
+[project.scripts]
+shelf-scanner = "shelf_scanner.app:main"
+
+[dependency-groups]
+dev = ["pytest"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
