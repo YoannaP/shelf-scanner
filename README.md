@@ -4,6 +4,12 @@ Photograph a bookshelf, get a list of the books on it, then classify each one as
 Read / Want to Read / Did not finish / Skip. Choices are written to an Obsidian vault
 and logged to an append-only CSV. See `SPEC.md` for the full behaviour.
 
+![Scanning a shelf photo, then classifying books one by one with the keyboard](docs/demo.gif)
+
+The notes it writes feed the [Top Shelf](https://yoannap.github.io/books/) page on my blog:
+
+![The Top Shelf bookshelf on yoannap.github.io](docs/top-shelf.jpg)
+
 ## Run
 
 ```sh
